@@ -15,3 +15,16 @@
 # rand(1..6)
 # Log output to the screen with puts:
 # puts "Hello, world"
+
+number1=rand(1..6)
+number2=rand(1..6)
+# total=number1+number2
+
+puts "The first die is #{number1}"
+puts "The first die is #{number2}"
+
+# puts "The total is #{total}"
+if number1+number2 == 7; then
+    puts "#{number1} #{number2}"
+    puts "Hello, world"
+end
