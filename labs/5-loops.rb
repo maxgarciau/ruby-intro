@@ -8,7 +8,18 @@
 # screen.
 ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"]
 suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
+cards = []
 
+for rank in ranks
+    for suit in suits
+        cards.push("#{rank} of #{suit}") 
+    end
+end
+
+shuffled_cards = cards.shuffle
+hand = shuffled_cards.sample(5)
+
+puts hand
 # Sample output:
 # 2 of Clubs
 # 2 of Diamonds
